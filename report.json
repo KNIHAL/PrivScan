@@ -1,0 +1,44 @@
+{
+  "total_findings": 3,
+  "findings": [
+    {
+      "rule_id": "SECRET_STRIPE_KEY",
+      "category": "secrets",
+      "severity": "high",
+      "description": "Stripe secret API key detected",
+      "match": "sk_test_1234567890abcdef",
+      "start": 11,
+      "end": 35,
+      "file": "/mnt/d/privscan/examples/sample_repo/app.py",
+      "line": 1,
+      "column": 12,
+      "line_text": "API_KEY = \"sk_test_1234567890abcdef\""
+    },
+    {
+      "rule_id": "SECRET_API_KEY",
+      "category": "secrets",
+      "severity": "high",
+      "description": "Hardcoded API key detected",
+      "match": "API_KEY = \"sk_test_1234567890abcdef\"",
+      "start": 0,
+      "end": 36,
+      "file": "/mnt/d/privscan/examples/sample_repo/app.py",
+      "line": 1,
+      "column": 1,
+      "line_text": "API_KEY = \"sk_test_1234567890abcdef\""
+    },
+    {
+      "rule_id": "SECRET_PASSWORD",
+      "category": "secrets",
+      "severity": "high",
+      "description": "Hardcoded password detected",
+      "match": "DB_PASSWORD=\"supersecret123\"",
+      "start": 0,
+      "end": 28,
+      "file": "/mnt/d/privscan/examples/sample_repo/config.env",
+      "line": 1,
+      "column": 1,
+      "line_text": "DB_PASSWORD=\"supersecret123\""
+    }
+  ]
+}
