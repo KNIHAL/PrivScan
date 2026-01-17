@@ -172,28 +172,22 @@ privscan/
 
 ### 🔐 Rule Design Philosophy
 
-Prefix-based secrets (low false positives)
-
-Assignment-only detection
-
-Length & boundary checks
-
-Country-aware + global PII
-
-No entropy guessing
-
-No ML black boxes
+- Prefix-based secrets (low false positives)
+- Assignment-only detection
+- Length & boundary checks
+- Country-aware + global PII
+- No entropy guessing
+- No ML black boxes
 
 ### 📌 Project Status
 
 Status: Stable / Complete (v1)
 
 PrivScan is a finished, production-ready CLI tool.
+
 Future additions (optional):
-
-more rule packs
-
-organization-specific policies
+    - more rule packs
+    - organization-specific policies
 
 ## 📜 License
 
